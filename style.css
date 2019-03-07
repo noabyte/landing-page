@@ -1,5 +1,5 @@
 :root {
-  --background: rgba(255, 203, 5, 0.85);
+  --background: rgba(255, 255, 255, 0.15);
 }
 
 *,
@@ -10,9 +10,77 @@
 
 body {
   margin: 0;
-  background: #0d0d29;
+  background: #000;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
+  color: white;
+}
+
+.showcase {
+  display: grid;
+  place-items: center;
+  top: 100%;
+}
+.showcase button {
+  border: white solid 1px;
+  border-radius: 3px;
+  background-color: var(--background);
+  padding: 1em 1.6em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.showcase button:hover {
+  color: #000;
+  border: #000 solid 2px;
+}
+.content {
+  height: 100vh;
+  background-image: url(self_defense.jpg);
+  background-size: cover;
+  display: grid;
+}
+.content h2 {
+  font-size: 3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background: var(--background);
+  padding: 10px 1em;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+footer p {
+  margin: 0;
+}
+footer {
+  padding: 2.2rem;
+}
+.center {
+  text-align: center;
+  margin: auto;
+}
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+.video-section {
+  margin: 4rem 1rem;
 }
 /* Navigation Styles */
 
@@ -22,6 +90,11 @@ header {
   position: fixed;
   width: 100%;
   z-index: 999;
+}
+.logo {
+  height: 90px;
+  width: 90px;
+  padding: 5px;
 }
 .nav-toggle-label {
   position: absolute;
@@ -79,7 +152,7 @@ nav a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }
@@ -125,4 +198,27 @@ nav a:hover {
     margin-left: 3em;
     margin-bottom: 0;
   }
+}
+/* form styling */
+.form-wrapper {
+  max-width: 220px;
+}
+.form-section form input {
+  padding: 1em;
+  background-color: var(--background);
+  width: 100%;
+  border: #333;
+  color: #f4f4f4;
+}
+.form-section form button {
+  border: white solid 1px;
+  border-radius: 3px;
+  background-color: var(--background);
+  padding: 1em 1.6em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.form-section form button:hover {
+  color: #000;
+  border: #000 solid 2px;
 }

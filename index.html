@@ -5,23 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1 class="logo">Logo</h1>
+    <header id="header">
+      <img
+        src="logoetamc.png"
+        alt="Logo"
+        id="header-img"
+        class="header-img logo"
+      />
+
       <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <nav>
+      <nav id="nav-bar">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#video-section">Video</a></li>
+          <li><a class="nav-link" href="#form-section">Form</a></li>
         </ul>
       </nav>
       <label for="nav-toggle" class="nav-toggle-label">
         <span></span>
       </label>
     </header>
+    <div class="showcase content">
+      <h2>ETAMC EUROPA</h2>
+      <button class="showcase-btn">Read More</button>
+    </div>
+    <!--Services-->
+    <section class="services" id="services">
+      <div class="container grid-3 center">
+        <div>
+          <i class="fab fa-youtube fa-3x"></i>
+          <h3>YouTube</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sint?
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-chalkboard-teacher fa-3x"></i>
+          <h3>YouTube</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sint?
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-hand-middle-finger fa-3x"></i>
+          <h3>YouTube</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sint?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--About-->
+    <section class="about bg-light" id="about">
+      <div class="container">
+        <div class="grid-2">
+          <div class="center">
+            <i class="fas fa-laptop-code fa-10x"></i>
+          </div>
+          <div>
+            <h3>About Us</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+              quidem facere odio provident neque dolorem, sit et, minus quo iste
+              ad cum nesciunt ut autem. Adipisci non magni nostrum ipsum,
+              perspiciatis obcaecati repellat quam eos. Natus sapiente
+              distinctio ullam asperiores.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Video Section-->
+    <section class="video-section" id="video-section">
+      <div class="center">
+        <iframe
+          id="video"
+          width="847"
+          height="480"
+          src="https://www.youtube.com/embed/feOmhljpyIE"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <h3>Estágio Nacional de Inverno 2017</h3>
+        <p>
+          Video by Rusty Gold Productions &copy;
+        </p>
+      </div>
+    </section>
+
+    <!--Form Section-->
+    <section class="form-section" id="form-section">
+      <div class="form-wrapper center">
+        <form id="form" action="">
+          <p class="center">
+            <label for="">Add me to the Newsletter</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="enter your email"
+            />
+          </p>
+          <p>
+            <input type="submit" value="SUBMIT" id="submit" />
+          </p>
+        </form>
+      </div>
+    </section>
+    <footer class="center bg-dark">
+      <p>Noabyte &copy;2019</p>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
